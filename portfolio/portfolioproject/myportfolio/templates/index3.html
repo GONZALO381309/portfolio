@@ -1,0 +1,124 @@
+
+{% load static %}
+{% load bootstrap5 %}
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html> {% endcomment %}
+
+
+<section id="contact" class="py-5 bg-light">
+
+  <div class="container">
+
+    <h2 class="text-center">Contact Me</h2>
+
+    <form method="POST" action="{% url 'contacto_nuevo' %}" id="contactForm" class="needs-validation" novalidate>
+
+      {% csrf_token %}
+
+      <div class="mb-3">
+
+        <label for="name" class="form-label">Name</label>
+
+        <input name="nombre" type="text" class="form-control" id="name" required>
+
+        <div class="invalid-feedback">Please enter your name.</div>
+
+      </div>
+
+      <div class="mb-3">
+
+        <label for="email" class="form-label">Email</label>
+
+        <input  name="email" type="email" class="form-control" id="email" required>
+
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+
+      </div>
+
+      <div class="mb-3">
+
+        <label for="message" class="form-label">Message</label>
+
+        <textarea  name="mensaje" class="form-control" id="message" rows="3" required></textarea>
+
+        <div class="invalid-feedback">Please enter your message.</div>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Contáctame</h2>
+        <form method="POST" action="{% url 'contacto_nuevo' %}" id="contactform" class="needs-validation" novalidate>
+            {% csrf_token %}
+            <div class="mb-4">
+                <label for="id_nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="id_nombre" name="nombre" value="" required>
+                <div class="invalid-feedback">Por favor ingresa un nombre.</div>
+            </div>
+            <br>
+
+            <div class="mb-4">
+                <label for="id_email" class="form-label">Correo</label>
+                <input type="text" class="form-control" id="id_email" name="email" required>
+                <div class="invalid-feedback">Por favor ingresa un correo.</div>
+            </div>
+            <br>
+
+            <div class="mb-4">
+                <label for="id_mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="id_mensaje" name="mensaje" row="3" required></textarea>
+                <div class="invalid-feedback">Por favor ingresa un mensaje.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form> 
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center"></h2>
+      <div class="row">
+        {% for proyecto in proyecto %}
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="{{ proyecto.imagen.url }}" class="card-img-top" alt="{{ proyecto.titulo }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ proyecto.titulo }}</h5>
+              <p class="card-text">{{ proyecto.descripcion }}</p>
+              <a href="{{ proyecto.link_sitio }}" class="btn btn-primary" target="_blank">Web</a>
+              <a href="{{ proyecto.link_repositorio }}" class="btn btn-secondary" target="_blank">Repositorio</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% comment %} {% bootstrap_javascript %} {% endcomment %}

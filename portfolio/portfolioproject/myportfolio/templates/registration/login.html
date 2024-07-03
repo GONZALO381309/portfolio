@@ -1,0 +1,23 @@
+{% extends 'base_generic.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container-center d-flex justify-content-center align-items-center vh-100">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card-md-4">
+                <div class="card-body">
+                    <img src="{% static 'img/key.svg' %}" alt="" width="50px" height="40px">
+                    <h5 class="card-title">Inicie Sesión</h5>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>               
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,96 @@
+{% load static %}
+{% load bootstrap5 %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Evaluacion 2</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MENÚ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+          <a class="nav-link" href="./proyecto_portafolio.html">PROYECTOS</a>
+          <a class="nav-link" href="./informacion.html">INFORMACIÓN</a>
+          <a class="nav-link" href="./contacto.html">CONTACTO</a>
+          <a class="nav-link" href="https://gonzalo381309.github.io/API-clima/">CLIMA</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- INICIO CAROUSEL -->
+  <div class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/IMAGEN HTML.jpg" class="d-block1 w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/CENTRO DE LLAMADOS.jpg" class="d-block2 w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/AYUDA.jpg" class="d-block3 w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- TERMINO CAROUSEL -->
+
+  <footer class="p-5">
+    <div class=" foo container-fluid">
+      <div class="row">
+        <div class="navi container-fluid text-white text-center ">
+          <div class="row">
+            <div class="col-sm-4  ">
+             <img src="./img/instagram.png" alt="icono instagram">
+              <p><b>Síguenos en Instagram: #instagram/gon</b></p>
+            </div>
+            <div class="col-sm-4  ">
+              <img src="./img/Whatsapp.png" alt="icono whatsapp"><p><b>Contactanos por Whatsapp al +569 5555 7777</b></p>
+              <br>
+              <p><i class="fa-solid fa-truck mt-5"></i> <b>Servicios a domicilio</b></p>
+            </div>
+            <div class="col-sm-4  ">
+              <img src="./img/facebook.png" alt="icono facebook">
+              <p><b>Escribenos al Facebook: https://web.facebook.com/krolayna/</b></p>
+            </div>
+            <div class="col sm-12 text-center ">
+              <img src="" alt="">
+              <p><b>2024 - Todos los derechos reservados.</b> </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>"{% static 'js/script.js' %}"</script>
+
+</body>
+</html>

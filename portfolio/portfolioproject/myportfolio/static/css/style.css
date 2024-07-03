@@ -1,0 +1,130 @@
+body{
+    background: rgb(51, 97, 182);
+}
+.container-fluid{
+    padding: 0px!important;
+}
+.navbar-brand{
+    margin: 10px;
+}
+.form-label{
+    margin: 10px;
+}
+.form-labe1{
+    margin: 10px;
+}
+.form-label2{
+    margin: 10px;
+}
+#validationServer01{
+    margin: 10px;
+}
+#validationServer02{
+    margin: 10px;
+}
+#ingreso_mensaje{
+    margin: 15px;
+    width: 1200px;
+    height: 150px;
+    border: 15px;
+}
+.texto{
+   margin: 10px;
+}
+.btn{
+    width: auto;
+}
+@media only screen and (min-width: 480px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    .row{
+        text-align: left;
+    }
+    #ingreso_mensaje{
+        width: 500px;
+    }
+    .form-labe1{
+       width: left;
+    }
+    .form-label2{
+        width: left;
+    }
+    #validationServerUsername{
+        width: left;
+    }
+    #validationServer02{
+        width: left;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .row{
+        text-align: left;
+    }
+    #ingreso_mensaje{
+        width: 500px;
+        
+    }
+    .form-label{
+        width: left;
+    }
+    #validationServer01{
+        width: left;
+    }
+    .form-labe1{
+        width: left;
+     }
+     .form-label2{
+         width: left;
+     }
+     #validationServerUsername{
+         width: left;
+     }
+     #validationServer02{
+         width: left;
+     }
+        
+}
+
+.d-block1{
+    float: left;
+   
+    height: 600px;
+}
+.d-block2{
+    float: left;
+    width: 800px;
+    height: 600px;
+}
+.d-block3{
+    float: left;
+    width: 800px;
+    height: 600px;
+}
+/* ESTILOS DE HOJA DE INFORMACION */
+.datos img{
+    width: 150px;
+    height: auto;
+}
+.informacion{
+    margin: 10px;
+}
+.col{
+    text-align: justify;
+    font-size: 25px;
+    color: aliceblue;
+}
+.myportfolio-img{
+    width: 0%;  /* Para que la imagen ocupe todo el ancho del contenedor */
+    height: 1%;  /* Altura fija */
+    
+}
